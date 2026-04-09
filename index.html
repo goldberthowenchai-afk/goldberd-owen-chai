@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="sumatif_smster2.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Formulir Pendaftaran Siswa</h2>
+    <p class="sub">Isi data dengan lengkap & benar</p>
+
+    <form id="formData">
+
+        <label>Nama Lengkap *</label>
+        <input type="text" id="nama" placeholder="Contoh: Muhammad Raihan">
+
+        <label>Kelas *</label>
+        <input type="text" id="kelas" placeholder="Contoh: XII IPA 2 / 11A / 7B">
+
+        <label>Pilih Ekstrakurikuler</label>
+        <div class="box">
+            <input type="checkbox" class="ekstra" value="Basket"> Basket <br>
+            <input type="checkbox" class="ekstra" value="Futsal"> Futsal <br>
+            <input type="checkbox" class="ekstra" value="Paduan Suara"> Paduan Suara
+        </div>
+
+        <label>Pilih Jadwal Belajar *</label>
+        <div class="box">
+            <input type="radio" name="jadwal" value="Pagi"> Pagi (07.00 - 12.00) <br>
+            <input type="radio" name="jadwal" value="Siang"> Siang (12.30 - 17.00) <br>
+            <input type="radio" name="jadwal" value="Sore"> Sore (17.30 - 20.30) <br>
+            <input type="radio" name="jadwal" value="Campuran"> Campuran
+        </div>
+
+        <div class="btn">
+            <button type="button" onclick="kirim()">Daftar Sekarang</button>
+            <button type="button" onclick="resetForm()">Reset Form</button>
+        </div>
+
+        <p id="hasil"></p>
+
+    </form>
+</div>
+
+<script src="sumatif_smster2.js"></script>
+
+</body>
+</html>
